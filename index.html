@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplayMe - 로그인/회원가입</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            /* Bootstrap utilities take care of most of this */
+            background-color: #f0f2f5; /* Light gray background */
+        }
+        .login-container {
+            max-width: 400px;
+            /* Additional custom styles if needed, though Bootstrap provides much */
+        }
+        .social-login-btn img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        /* Custom styles for specific social buttons if Bootstrap default isn't enough */
+        .social-login-btn.apple {
+            background-color: #000;
+            color: #fff;
+            border-color: #000;
+        }
+        .social-login-btn.apple:hover {
+            background-color: #333;
+            border-color: #333;
+        }
+        /* Kakao button (commented out as per previous request, but available) */
+        /*
+        .social-login-btn.kakao {
+            background-color: #fee500;
+            color: #3c1e1e;
+            border-color: #fee500;
+        }
+        .social-login-btn.kakao:hover {
+            background-color: #ffd800;
+        }
+        */
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center min-vh-100 p-3">
+    <div class="login-container card shadow-lg p-4 p-md-5 rounded-3 text-center">
+        <div class="logo mb-4">
+            <img src="images/replayme_logo_light.png" alt="ReplayMe Logo" class="img-fluid" style="max-width: 150px;">
+            <!-- 실제 서비스 로고 이미지 경로로 변경해주세요. -->
+        </div>
+        <p class="slogan text-muted mb-4 fs-6">
+            **당신의 운동을 과학적으로 분석하세요** [3]
+        </p>
+
+        <!-- 소셜 로그인 옵션 -->
+        <a href="home.html" class="social-login-btn btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center mb-3">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo">
+            Google로 로그인
+        </a>
+        <a href="home.html" class="social-login-btn btn btn-dark w-100 d-flex align-items-center justify-content-center mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/mac-os.png" alt="Apple Logo">
+            Apple로 로그인
+        </a>
+        <!-- 와이어프레임에 언급된 카카오 로그인 옵션은 필요시 추가 가능합니다. [3] -->
+        <!--
+        <a href="#" class="social-login-btn kakao btn w-100 d-flex align-items-center justify-content-center mb-3">
+            <img src="https://img.icons8.com/windows/32/kakao-talk.png" alt="Kakao Logo">
+            카카오로 로그인
+        </a>
+        -->
+
+        <!-- 이메일 가입 버튼 -->
+        <a href="regist.html" class="email-signup-link d-block mt-4 text-decoration-none text-primary fw-bold">
+            이메일로 가입
+        </a>
+    </div>
+
+    <!-- Bootstrap JS CDN (Optional, for some interactive components, not strictly needed for this static page) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eOzr0x3z3GzE" crossorigin="anonymous"></script>
+</body>
+</html>
