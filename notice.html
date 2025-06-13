@@ -18,6 +18,14 @@
             /* 하단 탭 메뉴 때문에 콘텐츠가 가려지지 않도록 패딩 추가 */
             padding-bottom: 70px; /* 탭 메뉴 높이 고려 */
         }
+        /* PC devices only (typically screens wider than 768px) */
+        @media (min-width: 768px) {
+            body {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
         .container {
             max-width: 600px; /* 최대 너비 설정 */
             margin-top: 20px;

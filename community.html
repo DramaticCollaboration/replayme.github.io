@@ -16,6 +16,14 @@
             padding-bottom: 70px; /* 하단 고정 내비게이션 바를 위한 공간 */
             background-color: #f8f9fa; /* 배경색 */
         }
+        /* PC devices only (typically screens wider than 768px) */
+        @media (min-width: 768px) {
+            body {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
         .video-container {
             position: relative;
             width: 100%;

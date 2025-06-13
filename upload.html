@@ -13,6 +13,14 @@
             background-color: #f0f2f5; /* 로그인 페이지 및 홈 화면과 일관된 배경색 */
             padding-bottom: 70px; /* 하단 탭 바 공간 확보 */
         }
+        /* PC devices only (typically screens wider than 768px) */
+        @media (min-width: 768px) {
+            body {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
         .navbar-bottom {
             background-color: #ffffff;
             border-top: 1px solid #e0e0e0;
