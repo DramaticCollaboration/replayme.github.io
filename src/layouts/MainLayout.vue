@@ -74,7 +74,7 @@
       </div>
     </q-page-container>
 
-    <q-footer class="bg-grey-1 text-grey-9" v-if="!isAuthPage">
+    <q-footer class="bg-grey-1 text-grey-9 safe-area-bottom" v-if="!isAuthPage">
       <q-tabs align="justify" dense>
         <q-route-tab icon="home" label="홈" name="index" to="/index  "/>
         <q-route-tab icon="search" label="탐색" name="explore" to="/explore"/>
@@ -227,4 +227,7 @@ onMounted(() => {
   }
 }
 
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom) !important;
+}
 </style>
