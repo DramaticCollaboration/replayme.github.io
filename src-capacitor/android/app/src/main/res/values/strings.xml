@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Replay Me</string>
+    <string name="title_activity_main">Replay Me</string>
+    <string name="package_name">com.empasy.replayme</string>
+    <string name="custom_url_scheme">com.empasy.replayme</string>
+</resources>
